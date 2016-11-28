@@ -1,10 +1,24 @@
-package(default_visibility = ['PUBLIC'])
+package(
+    default_python_interpreter = 'python3.5',
+    default_visibility = ['PUBLIC'],
+)
 
 pip_library(
     name = 'promise',
-    version = '0.4.1',
+    version = '1.0.0',
     hashes = [
-        'sha1: 97e0d891f434bfd46e1a388c6732e2aa6b2aecf1',
+        'sha1: 4b713d701dba6b839cee5a8f2b26c17feabfcdc3',
     ],
-    outs = ['promise.py']
+    deps = [
+        ':typing',
+    ],
+)
+
+pip_library(
+    name = 'typing',
+    version = '3.5.2.2',
+    outs = ['typing.py'],
+    hashes = [
+        'sha1: d47eac14a6822e3ad4e63a2ca3319d5a97ac8e63',
+    ],
 )

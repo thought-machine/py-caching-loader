@@ -1,0 +1,7 @@
+### PLZ ###
+
+plz-out
+.plz-cache
+.plzconfig.local
+.plz_clean_*
+test.results
